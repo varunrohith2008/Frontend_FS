@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #a2c2e2, #f9f9f9);
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+  transition: transform 0.3s ease;
+}
+
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+
+h1 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+
+input[type="text"]:focus {
+  border-color: #4c8bf5;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #4c8bf5;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+button:hover {
+  background-color: #3a74d9;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+
+.heross-img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+ display: block;
+  
+}
+
+.resultimg img {
+  width: 250px;              
+  border-radius: 10px;
+}

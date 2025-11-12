@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+
+.navbar{
+    padding: 20px;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.nav{
+
+    display: flex;
+    gap: 20px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.932);
+
+}
+
+.logo{
+    color: black;
+
+}
+
+.parent-box{
+
+     background-color: rgb(224, 244, 8);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.box{
+
+    background-color: rgb(246, 0, 0);
+    color: white;
+    padding: 20px;
+    width: 400xpx;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    
+</head>
+<body>
+    <div style="display: flex;justify-content: center;align-items: center;">
+    <table border="4" cellpadding="25" id="tabledata" >
+            <thead>
+                 <th>S.no</th>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Problem</th>
+                <th>City</th>
+                <th>How do you Know</th>
+                <th>Review it</th>
+            </thead>
+            <tbody id="table">
+        </tbody>
+    </table>
+    </div>
+
+    <style>
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            background-color: white;
+        }
+
+    </style>
+
+    <script>
+        const tabledata = localStorage.getItem("formdata")
+        const table = JSON.parse(tabledata)
+
+        const showtable = document.getElementById("table")
+        table.forEach((e,i)=>{
+            const row = `<tr>
+                <td>${i+1}</td>
+                <td>${e.username}</td>
+                <td>${e.mobile}</td>
+                <td>${e.problem}</td>
+                <td>${e.happens}</td>
+                <td>${e.know}</td>
+                <td>${e.review}</td>
+                </tr>`
+                showtable.innerHTML += row;
+
+        })
+
+
+    </script>
+</body>
+</html>

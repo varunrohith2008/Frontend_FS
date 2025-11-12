@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Cards</title>
+</head>
+<body>
+  <h2>Recipe List</h2>
+  <div id="pro"></div>
+
+  <script>
+    const datago = async () => {
+      try {
+        console.log('Fetching data...');
+        const res = await fetch("https://dummyjson.com/recipes?limit=7");
+        const data = await res.json();
+        const recipes = data.recipes;
+        const container = document.getElementById("pro");
+
+        recipes.forEach(recipe => {
+          const box = document.createElement("div");
+          box.classList.add("card");
+          box.innerHTML = `
+            <img src="${recipe.image}" alt="${recipe.name}" width="200">
+            <h3>${recipe.id}. ${recipe.name}</h3>
+            <p>Cuisine: ${recipe.cuisine}</p>
+            <p>Difficulty: ${recipe.difficulty}</p>
+            <p>Rating: ⭐ ${recipe.rating}</p>
+          `;
+          container.appendChild(box);
+        });
+
+      } catch (err) {
+        console.error('Something went wrong:', err);
+      } finally {
+        console.log('Process completed');
+      }
+    };
+
+    datago();
+  </script>
+</body>
+</html>

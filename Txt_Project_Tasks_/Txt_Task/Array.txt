@@ -1,0 +1,147 @@
+Array:
+1.<script>
+var arr=[2,4,6,8]
+console.log(arr[2])
+</script>
+2.<script>
+var arr=[2,4,6,8,'ten']
+console.log(arr[4])
+</script>
+3.<script>
+var arr=[2,4,6,8]
+console.log(arr[2])
+</script>
+4.<script>
+var arr=["Hello","world"]
+console.log(arr)
+</script>
+5.<script>
+var arr=[2,4,"Hello",8]
+console.log(arr)
+</script>
+6.<script>
+var arr=[1,2,3]
+console.log(typeof arr)
+</script>
+7.<script>
+var arr=[]
+console.log(arr)
+</script>
+8.<script>
+var arr=['a','b','c','d']
+console.log(arr)
+</script>
+9.
+<script>
+var arr=[]
+console.log(arr)
+</script>
+10.<script>
+let a=10;
+let b=20;
+var arr=[a,b,c,d]
+console.log(arr)
+////OBJECT CREATION///
+1.let obj={Sports:"Cricket:,Team:"Austraila",Qualify:"WC"}
+console.log(obj)
+2.let theHotel={food:"Biryani",Price:180}
+console.log(theHotel)
+3.let theatre={Movie:"Jersey",Actor:"Nani",MD:"Anirudh"}
+console.log(theatre)
+4..let obj={usefull:"Linkedin",Notuseful:"Instagram"}
+console.log(obj)
+5.let lap={Brand:"Dell",Brandkeyboard:"zebronics",Mouse:"hp"}
+console.log(lap)
+6.let exam={Subject:"maths",Marks:99}
+console.log(exam)
+7.var details={Student:"Tharun",standard:5}
+console.log(details.standard)
+8.let lang={prog:"python",oops:"java'}}
+console.log(lang.oops)
+9. let choose={engg:"BE",arts:"Bsc"}
+console.log(choose.arts)
+10.var apps={messanger:"Whatsapp,fb,arattai",Food:["swiggy","zomato"],Travel:"makemytrip,ixigo"}
+console.log(apps.Food[0])
+11.var apps={messanger:{"Whatsapp","fb","arattai"],Food:["swiggy","zomato"],Travel:["makemytrip","ixigo"]}
+console.log(apps.Food[0])
+console.log(apps.messanger[2])
+console.log(apps.Travel[0])
+12. let tickets={movie:["bookmyshow","ticketnew"],bus:["redbus","clearmytrip"],flight:["Indigo","Emirates"]
+console.log(tickets.bus[1],tickets.flight)
+13.var tickets={movie:["bookmyshow","ticketnew"],bus:["redbus","clearmytrip"],flight:["Indigo","Emirates"]
+console.log(tickets.bus[1],tickets.flight)
+14.const tickets={movie:["bookmyshow","ticketnew"],bus:["redbus","clearmytrip"],flight:["Indigo","Emirates"]
+console.log(tickets.bus[1],tickets.flight)
+/////Array of object////
+1,let arr=[1,2,{"hello"
+"js"}]
+console.log(arr)
+2.let arr1 = [1, 2, { "hello": "world" }]
+console.log(arr1)
+3.var arr = ["numbers", { "one": 1, "two": 2, "three": 3 }]
+console.log(arr[0])
+4.let bags=[wrogn,{safari:1,tycoon:2,}]
+console.log(bags)
+5.var applianaces=[tv,{washmachine:1,fridge:2}]
+console.log(appliances)
+6.const ac=[harrier,{ogeneral:1{lG:2}}]
+console.log(ac)
+///return statement in function////
+function add(a,b){
+ return a+b;
+}
+function add(b,c)
+{
+	return 
+}
+function add(a,b){
+ return a+b;
+}
+function div(a,b){
+ return a/b;
+}
+
+function mul(a,b){
+ return a*b;
+}
+function sub(a,b){
+ return a-b;
+}
+// Anonymous Functions
+let v8 = function () {
+    console.log("engine");
+}
+let games = function () {
+    console.log("Freefire"); 
+}
+let sumNum = function () { 
+    console.log(10 + 20); 
+}
+let car = function () { 
+    console.log("Nissan GTR"); 
+}
+let everest= function () { 
+    console.log("HImalayan"); 
+}
+let calendar = function () { 
+    console.log(months); 
+}
+let brandShirt = function () { 
+    console.log("Brandshirts"); 
+}
+let getDate = function () { 
+    console.log(new Date()); 
+}
+// Arrow Functions
+let fruits = () => console.log("Banana");
+let sub = () => console.log(10-5);
+let apple = () => console.log("ios");
+let name = () => console.log("Varun");
+let Blinkit = () => console.log("grocerics");
+let fridge = () => console.log("icecube");
+let condition = () => console.log("condtion");
+let lock = () => console.log("key");
+let chennai = () => console.log("Bilal");
+let lorry = () => console.log("Ashok leyland");
+let car = () => console.log("Nissan");
+let coffee = () => console.log("ooty");

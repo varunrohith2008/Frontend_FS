@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference B/W JS Versions</title>
+</head>
+
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #333;
+            color: #333;
+            padding: 30px;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 200%;
+        }
+
+        .container {
+            width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        
+        .box{
+            border-spacing: 10px;
+        }
+
+        thead {
+            background-color: #b97a57;
+            color: white;
+        }
+    </style>
+
+    <div class="navbar">
+        <nav>
+            JavaScript (JS)
+        </nav>
+
+    </div>
+    <br><br>
+    <div class="container">
+        <table class="box">
+            <thead>
+                <tr>
+                    <th>Concepts</th>
+                    <th>ES5</th>
+                    <th>ES6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Variable Declaration</td>
+                    <td>
+                        => Uses var (function, can be redeclared)
+                    </td>
+                    <td>
+                         =>Uses let and const (Block Scoped - Cannot be reclared)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Functions</td>
+                    <td>
+                         =>Defined using function keyword
+                    </td>
+                    <td>
+                         =>Introduced arrow functions () => {} with lexical this
+                    </td>
+                </tr>
+                <tr>
+                    <td>Strings</td>
+                    <td>
+                         =>String concatenation using +
+                    </td>
+                    <td>
+                         =>Introduced template literals using backticks `Hello ${name}`
+                    </td>
+                </tr>
+                <tr>
+                    <td>Objects</td>
+                    <td>
+                         =>Must specify key-value pairs explicitly
+                    </td>
+                    <td>
+                         =>Supports object shorthand, computed property names, and method shorthand
+                    </td>
+                </tr>
+                <tr>
+                    <td>Classes</td>
+                    <td>
+                         =>Implemented via constructor functions & prototypes
+                    </td>
+                    <td>
+                         =>Introduced class syntax with constructor, extends, super
+                    </td>
+                </tr>
+                <tr>
+                    <td>Modules</td>
+                    <td>
+                        =>No native module system (used IIFE/CommonJS require)
+                    </td>
+                    <td>
+                         =>Introduced native import and export statements
+                    </td>
+                </tr>
+                <tr>
+                    <td>Parameters</td>
+                    <td>
+                         =>Set manually inside function body
+                    </td>
+                    <td>
+                         =>Supports default parameter values in function definitions
+                    </td>
+                </tr>
+                <tr>
+                    <td>Destructuring</td>
+                    <td>
+                         =>Manual extraction of values from arrays/objects
+                    </td>
+                    <td>
+                         =>Introduced destructuring assignment [a, b] = arr, {x, y} = obj
+                    </td>
+                </tr>
+                <tr>
+                    <td>Promises/Async</td>
+                    <td>
+                         =>Uses callbacks for async code
+                    </td>
+                    <td>
+                         =>Introduced Promises, later enabling (async/await)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Loops/Iteration</td>
+                    <td>
+                         =>for, for-in loops
+                    </td>
+                    <td>
+                         =>Added for...of, iterators, and generators (function)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Scope</td>
+                    <td>
+                         =>Function scope (via var)
+                    </td>
+                    <td>
+                         =>Function scope (via var)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hoisting</td>
+                    <td>
+                         =>Variables hoisted and initialized as undefined
+                    </td>
+                    <td>
+                         =>Variables hoisted but not initialized (Temporal Dead Zone)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Type of Syntax</td>
+                    <td>
+                         =>Verbose, older syntax
+                    </td>
+                    <td>
+                         =>Cleaner, more readable, modern syntax
+                    </td>
+                </tr>
+                <tr>
+                    <td>Browser Support</td>
+                    <td>
+                         =>Supported by all browsers
+                    </td>
+                    <td>
+                         =>Supported by modern browsers (can use Babel for older ones)
+                    </td>
+                </tr>
+
+
+
+
+</body>
+
+</html>

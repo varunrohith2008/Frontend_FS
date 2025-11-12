@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.navbar {
+
+    margin: 5px;
+    padding: 5px;
+    background-color: greenyellow;
+    justify-content: space-between;
+}
+
+
+
+
+.logo {
+display: flex;
+
+}
+
+.div{
+
+    background-color: aliceblue;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    justify-content: space-between;
+}

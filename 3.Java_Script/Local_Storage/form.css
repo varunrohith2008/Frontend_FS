@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0px;
+     box-sizing: border-box;
+}
+
+body{
+background-color: black;
+
+
+}
+
+.parent{
+   
+    background-color: khaki;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+
+}
+
+data{
+    border-radius: 20px;
+    
+}

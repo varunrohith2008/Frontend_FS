@@ -1,0 +1,150 @@
+<script>
+    
+    // Promise.then(()=>{})
+    
+    // Promise.then(()=>{})
+    
+    // Promise.then(()=>{})
+    
+    // Promise.then(()=>{})
+    
+    // Promise.then(()=>{})
+    
+    // Promise.then(()=>{})
+    
+    // Promise.then(()=>{})
+    
+    // Promise.then(()=>{})
+    
+    // Promise.then(()=>{})
+    
+    // Promise.then(()=>{})
+    
+    // Promise.then(()=>{})
+    
+    // Promise.then(()=>{})
+
+</script>
+
+<script>
+
+    // Promise((ressolve,reject)=>{
+
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+    //  Promise((ressolve,reject)=>{
+        
+    // })
+     
+
+</script>
+
+<script>
+    // Step 1: Function to make briyani (returns a Promise)
+    function makebriyani() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("Briyani is ready");
+                resolve("Briyani Done");
+            }, 2000);
+        });
+    }
+
+    // Step 2: Function to serve briyani
+    function serveBriyani() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("Briyani served to customer");
+                resolve("Briyani served successfully");
+            }, 1500);
+        });
+    }
+
+    // Step 3: Function when customer becomes happy
+    function customerHappy() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("Customer is happy 😄");
+                resolve("Customer satisfied");
+            }, 1000);
+        });
+    }
+
+    // Step 4: Promise chaining
+    makebriyani()
+        .then((msg) => {
+            console.log("Step 1 Done:", msg);
+            return serveBriyani(); // returns next promise
+        })
+        .then((msg2) => {
+            console.log("Step 2 Done:", msg2);
+            return customerHappy(); // returns next promise
+        })
+        .then((msg3) => {
+            console.log("Step 3 Done:", msg3);
+            console.log("We achieved our Dream Celebrity Customer");
+        })
+        .catch((err) => {
+            console.log("Error:", err);
+        });
+</script>
+
+</body>
+</html>
+

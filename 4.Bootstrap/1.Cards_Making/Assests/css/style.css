@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: #3B2F2F;
+
+}
+.img2{
+    background-image: url(../img/background/3.jpg);
+}
+
+.text-center{
+    border-radius: 30px;
+
+}
+
+.card {
+    transition: 0.5s ease 
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+
+}

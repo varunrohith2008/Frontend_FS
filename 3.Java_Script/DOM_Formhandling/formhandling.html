@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Process</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+
+
+
+
+    <form>
+
+
+        <input type="text" id="data" placeholder="Type ur Fvrt Cast">
+        <button id="btn">Click</button>
+    </form>
+
+<div class="resultimg">
+
+</div>
+
+
+    <script>
+
+     let images = {
+    arjundas: "assests/img/arjundas.webp",
+    dhruv: "assests/img/dhruv.jpg",
+    surya: "assests/img/surya.webp",
+    vijay: "assests/img/vijay.jpg",
+    vijaysethupathi: "assests/img/vijaysethupathi.jpg",
+    dulquer: "assests/img/dulquer.jpeg",
+    atharva: "assests/img/atharva.jpeg",
+    dhanush: "assests/img/dhanush.jpg",
+    prabhas: "assests/img/prabhas.jpeg",
+    rajini: "assests/img/rajini.jpg",
+};
+
+
+document.getElementById("btn").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    let searchText = document.getElementById("data").value.toLowerCase().trim();
+
+
+    let resultDiv = document.querySelector(".resultimg");
+
+    if (images[searchText]) {
+        resultDiv.innerHTML = `<img src="${images[searchText]}" alt="${searchText}" width="200">`;
+    } else {
+        resultDiv.innerHTML = `<p style="color:red;">Image Not Found ❌</p>`;
+    }
+    
+});
+
+    alert(searched)
+</script>
+
+    </script>
+</body>
+
+</html>

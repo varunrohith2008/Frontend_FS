@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+</head>
+
+<body>
+
+    <h1>Marvel's Tea House</h1>
+    <img src="./Assests/img/banner1jpg.jpg" alt="banner Marvel">
+
+    <section>
+        <h2>Marvel's Menu</h2> 
+
+        <button id="btn">
+            <p>Tea</p>
+        </button>
+        <button>
+            <p>Thor Coffee</p>
+        </button>
+        <button>
+            <p>Iron Man Boost</p>
+        </button>
+        <button>
+            <p>Venom Horlicks</p>
+        </button>
+
+        <button id="pay"
+            style="text-align: end; background-color:rgb(0, 0, 0);color:white; border-radius:20px;display:none;">
+            Payment</button>
+        
+
+    </section>
+
+
+    <style>
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: #222;
+            font-size: 3rem;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+        }
+
+
+        section {
+            padding: 30px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+
+        button {
+            background-color: #1d1d1d;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        button:hover {
+            background-color: #4CAF50;
+            transform: scale(1.05);
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            section {
+                padding: 20px;
+                margin: 15px;
+            }
+
+            button {
+                font-size: 1rem;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+
+    <script>
+
+     let show = document.getElementById("btn");
+        let hidden = document.getElementById("hidebutton");
+
+        show.addEventListener("click", () => {
+            if (hidden.style.display === "none") {
+                hidden.style.display = "block"
+            }
+            else {
+                hidden.style.display = "none";
+
+            }
+        })
+        let Teabtn = document.getElementById("btn")
+        var paybtn = document.getElementById("pay")
+
+        Teabtn.addEventListener("click", () => {
+            if (paybtn.style.display === "none") {
+                paybtn.style.display = "block"
+            }
+            
+        })
+       
+        paybtn.addEventListener("click", () => {
+            if (paybtn.style.display === "block") {
+                alert("Thanks for you order");
+            }
+            else {
+                
+            }
+        });
+
+        
+
+
+    </script>
+
+</body>
+
+</html>

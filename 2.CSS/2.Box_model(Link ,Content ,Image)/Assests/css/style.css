@@ -1,0 +1,27 @@
+.box {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: rgb(225, 7, 7);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    border: 5px solid rgb(3, 2, 0);
+    margin: 10px;
+
+
+}
+ 
+.inline {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: violet;
+    color: black;
+    text-align: center;
+    padding: 40px;
+    margin: 40px;
+    border: 26px solid rgb(0, 98, 11);
+
+}
+

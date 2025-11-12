@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 300%; color: brown; background-color: beige;">Rocky's Cafe</h1>
+<script>
+let shopname= ["Rocky's Cafe"]
+console.log(shopname);
+let category= ["Hot Beverages","freshjuice"]
+console.log(category);
+let HotBeverages=["Tea","Coffee","Horlicks","Ragi Malt","Sukku Milk"]
+console.log(HotBeverages)
+let HotBeverages_charges={Tea:"18",coffee:"25",Horlicks:"30",RagiMalt:"25",SukkuMilk:"40"}
+console.log(HotBeverages_charges)
+var freshjuice=["Avaccado","Muskmelon","Athi","Apple","Lemon Grape","Jackfruit Shake"]
+console.log(freshjuice)
+
+let freshjuice_charges={Avaccado:"30",Muskmelon:"40",Athi:"50",Apple:"70",LemonGrape:"25",JackfruitShake:"100"}
+console.log(freshjuice_charges)
+if (freshjuice_charges.Avaccado ==="30"){
+    console.log("30 rupees Avaccado")
+}
+else{
+    console.log("NO, low money ")
+}
+console.log("Spiderman")
+</script>
+<script>
+
+
+        const products = [
+            { name: "Tea", category: "HotBeverages", price: "18" },
+            { name: "Coffee", category: "HotBeverages", price: "25" },
+            { name: "Horlicks", category: "HotBeverages", price: "30" },
+            { name: "RagiMalt", category: "HotBeverages", price: "25" },
+            { name: "Avaccado", category: "freshjuice", price: "30" },
+            { name: "Muskmelon", category: "freshjuice", price: "40" },
+            { name: "JackfruitShake", category: "freshjuice", price: "100" },
+            { name: "LemonGrape", category: "freshjuice", price: "25" },
+
+        ];
+
+
+        console.log("List of drinks Products");
+        for (let i = 0; i < products.length; i++) {
+            if (products[i].category === "Hot Beverages") {
+                console.log(`Hot Beverages: ${products[i].name} - Rs.${products[i].price}`);
+            } else if (products[i].category === "freshjuice") {
+                console.log(`freshjuice: ${products[i].name} - Rs.${products[i].price}`);
+            }
+        }
+
+        const orderItems = [
+            { name: "Avaccado", quantity: 5 },
+            { name: "Muskmelon", quantity: 3 },
+            { name: "Lemon Grape", quantity: 6 }
+        ];
+
+
+        let i = 0;
+        let grandTotal = 0;
+
+        console.log("----- Your Order -----");
+        while (i < orderItems.length) {
+            const product = products.find(p => p.name === orderItems[i].name);
+            if (product) {  
+                const itemTotal = product.price * orderItems[i].quantity;
+                grandTotal += itemTotal;
+                console.log(`${product.name} x${orderItems[i].quantity} = Rs.${itemTotal}`);
+            }
+            i++;
+        }
+
+        console.log(`GrandTotal: Rs.${grandTotal}`);
+
+
+    </script>
+</body>
+ 
