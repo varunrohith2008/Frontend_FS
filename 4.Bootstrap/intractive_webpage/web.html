@@ -1,53 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=+, initial-scale=1.0">
-    <title>About Chennai</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Chennai Problems 2025</title>
+    <link rel="stylesheet" href="./Assest/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
-    
-<header>
-    <nav>
-        <div class="bg-primary text-white d-flex justify-content-around p-3">
-            <div class="">
-            <h4>Problems in Chennai</h4>
+
+
+    <header>
+        <nav>
+            <div class="bg-black text-white d-flex justify-content-around align-items-center p-3">
+                <h4>Peoples Facing Problems 2025</h4>
+                <div class="d-flex gap-4 align-items-center">
+                    <a href="#" class="text-decoration-none text-white">Home</a>
+                    <a href="#" class="text-decoration-none text-white">About</a>
+                    <a href="#" class="text-decoration-none text-white">Reports</a>
+                    <a href="#" class="text-decoration-none text-white">Contact Us</a>
+
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                        data-bs-target="#registerModal">Register</button>
+                </div>
             </div>
-            <div class="d-flex gap-5  align-items-center">
-              <a href="" class="text-decoration-none text-white">Home</a>
-              <a href="" class="text-decoration-none text-white">About</a>
-              <a href="" class="text-decoration-none text-white">Reports</a>
-              <a href="" class="text-decoration-none text-white">Contact Us</a>
-              <button class="btn btn-success rounded">Register</button>
+
+            <div class="modal fade" id="loginModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-black text-white">
+                            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                            <button type="button" class="btn-close btn-close-white bg-black text-white"
+                                data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body bg-black">
+                            <form>
+                                <div class="mb-3 text-white">
+                                    <label for="loginEmail" class="form-label">Email ID</label>
+                                    <input type="email" class="form-control" id="loginEmail"
+                                        placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3 text-white">
+                                    <label for="loginPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="loginPassword"
+                                        placeholder="Enter your password">
+                                </div>
+                                <button type="submit" class="btn btn-warning">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="registerModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-black text-white">
+                            <h5 class="modal-title bg-black text-white" id="registerModalLabel">Register</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-2">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="regEmail" class="form-label">Email ID</label>
+                                    <input type="email" class="form-control" id="regEmail">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="newPassword" class="form-label">New Password</label>
+                                    <input type="password" class="form-control" id="newPassword">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="confirmPassword" class="form-label">Confirm New Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="mobileNo" class="form-label">Mobile Number</label>
+                                    <input type="tel" class="form-control" id="mobileNo">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="address" class="form-label">Address for Communication</label>
+                                    <textarea class="form-control" id="address"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-warning text-black">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="container-fluid p-5 d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+                <h1 class="fs-1 fw-bold">Faces a Range of Urban Challenges</h1>
+                <p class="fw-bold">Chennai, a City of Resilience Grapples with the Tides of Change</p>
+
+                <button type="button" class="btn btn-success rounded-pill" data-bs-toggle="modal"
+                    data-bs-target="#alertModal">
+                    Raise your Own
+                </button>
             </div>
         </div>
-    </nav>
-</header>
 
 
-<main>
-    <div class="container-fluid p-5 d-flex justify-content-center align-items-center">
-        <div class="d-flex flex-column justify-content-center align-items-center gap-3">
-            <h1 class="fs-1 fw-bold">Faces a Range of Urban Challenges</h1>
-            <p class="fw-bold">Chennai, a City of Resilience Grapples with the Tides of Change</p>
-             
-                <button class="btn btn-success rounded-pill">Raise your Own</button>
-
+        <div class="modal fade" id="alertModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="alertModalLabel">Raise Your Complaint</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Thank you for raising your Complaint! Our team will review it shortly.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</main>
+    </main>
 
-<section>
-    
-</section>
+    <section>
+
+        <h1 class="text-center">
+            Major Problem Peoples Faces in Chennai at 2025</h1>
+    </section>
+
+    <section>
+        <section class="container my-5">
+            <div class="row g-4">
+
+
+                <div class="col-md-4">
+                    <div class="card h-100 bg-black text-white">
+                        <img src="./Assest/img/content/1.jpg" class="card-img-top" alt="Problem img">
+                        <div class="card-body">
+                            <h5 class="card-title">Poor Road and Pavement Conditions</h5>
+                            <p class="card-text">Many of Chennai’s roads and pavements have deteriorated due to
+                                substandard
+                                construction, frequent digging for utility works, and heavy rainfall. Potholes and
+                                broken surfaces
+                                cause frequent accidents and traffic jams. Pedestrians struggle as pavements are often
+                                uneven or
+                                unusable.</p>
+                            <a href="#" class="btn btn-light">Raise</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card h-100 bg-black text-white">
+                        <img src="./Assest/img/content/2.webp" class="card-img-top" alt="Problem img">
+                        <div class="card-body">
+                            <h5 class="card-title">Waterlogging and Flooding</h5>
+                            <p class="card-text">Even moderate rainfall leads to severe waterlogging in several areas
+                                because of
+                                clogged stormwater drains and encroached water bodies. The city’s rapid urbanization has
+                                reduced
+                                natural drainage paths. As a result, residents face traffic chaos, property damage, and
+                                health risks
+                                during monsoons.</p>
+                            <a href="#" class="btn btn-light">Raise</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card h-100 bg-black text-white">
+                        <img src="./Assest/img/content/3car_road.jpg" class="card-img-top" alt="Problem img">
+                        <div class="card-body">
+                            <h5 class="card-title">Encroachment of Footpaths</h5>
+                            <p class="card-text">Many sidewalks in Chennai are occupied by parked vehicles, roadside
+                                vendors, and
+                                building ramps. This forces pedestrians to walk on busy roads, increasing the risk of
+                                accidents.
+                                Poor enforcement of civic rules and lack of pedestrian-focused planning worsen the
+                                issue.</p>
+                            <a href="#" class="btn btn-light">Raise</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card h-100 bg-black text-white">
+                        <img src="./Assest/img/content/4overcrowd.jpeg" class="card-img-top" alt="Problem img">
+                        <div class="card-body">
+                            <h5 class="card-title">Overcrowded Public Schools</h5>
+                            <p class="card-text">Government schools in Chennai are struggling with overcrowded
+                                classrooms and
+                                inadequate facilities. Many students have to sit on the floor due to a shortage of
+                                benches and
+                                space. This affects both the quality of learning and the overall well-being of students.
+                            </p>
+                            <a href="#" class="btn btn-light">Raise</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card h-100 bg-black text-white">
+                        <img src="./Assest/img/content/5sewagejpg.jpg" class="card-img-top" alt="Problem img">
+                        <div class="card-body">
+                            <h5 class="card-title">Sewage Overflow and Poor Sanitation</h5>
+                            <p class="card-text">In several localities, sewage overflow onto streets is common because
+                                of outdated or
+                                damaged drainage systems. Construction work often disrupts existing pipelines, and
+                                repairs are slow.
+                                The resulting unhygienic conditions cause foul smells, mosquito breeding, and diseases.
+                            </p>
+                            <a href="#" class="btn btn-light">Raise</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 bg-black text-white">
+                        <img src="./Assest/img/content/6road_crack.jpg" class="card-img-top" alt="Problem img">
+                        <div class="card-body">
+                            <h5 class="card-title">Infrastructure Work Disruptions</h5>
+                            <p class="card-text">Ongoing metro and road projects cause long-term traffic diversions and
+                                dust pollution.
+                                While they promise better infrastructure later, residents currently deal with
+                                congestion, noise, and
+                                accessibility issues.</p>
+                            <a href="#" class="btn btn-light">Raise</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+        <script>
+
+            document.addEventListener(function () {
+
+
+                const registerForm = document.querySelector('#registerModal form');
+                registerForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+
+                    const firstName = document.getElementById('firstName').value.trim();
+                    const email = document.getElementById('regEmail').value.trim();
+                    const password = document.getElementById('newPassword').value.trim();
+
+                    if (firstName && email && password) {
+                        const userData = {
+                            firstName: firstName,
+                            email: email,
+                            password: password
+                        };
+
+                        localStorage.setItem('user', JSON.stringify(userData));
+
+                        alert("Created account successfully!");
+
+                        const registerModal = bootstrap.Modal.getInstance(document.getElementById('registerModal'));
+                        registerModal.hide();
+                        registerForm.reset();
+                    } else {
+                        alert("Please fill in all required fields.");
+                    }
+                });
+
+                const loginForm = document.querySelector('#loginModal form');
+                loginForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    const email = document.getElementById('loginEmail').value.trim();
+                    const password = document.getElementById('loginPassword').value.trim();
+
+                    if (email && password) {
+                        const storedUser = JSON.parse(localStorage.getItem('user'));
+
+                        if (storedUser && storedUser.email === email && storedUser.password === password) {
+                            alert(`Welcome back, ${storedUser.firstName}! Logged in successfully.`);
+                        } else {
+                            alert("Invalid email or password. Please try again or register first.");
+                        }
+                        const loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+                        loginModal.hide();
+                        loginForm.reset();
+                    } else {
+                        alert("Please enter both email and password.");
+                    }
+                });
+            });
+        </script>
+
+        <footer class="bg-black text-white mt-5 pt-5 pb-3">
+            <div class="container">
+
+
+                <h2 class="text-center mb-4 text-warning">Makkal's Review</h2>
+
+                <div class="row g-4 mb-4 align-items-center justify-content-center">
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-white h-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">Rocky</h5>
+                                <p class="card-text">Peoples vandhu Avanga Velai ah thaan paakuranga , they are not
+                                    worrying about the society, edho Kadamaiku they are Living!!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 align-items-center justify-content-center">
+                        <div class="card bg-dark text-white h-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">JD</h5>
+                                <p class="card-text">Ellarum Avnaga Avangala matum paakuranga , if they people gets
+                                    accidents or somewhat like this , avangaluku indha maari incidents nadantha matum
+                                    thaan they are respecting peoples.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 align-items-center justify-content-center">
+                        <div class="card bg-dark text-white h-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">GOAT</h5>
+                                <p class="card-text">Public la nadakura problems and incident pathi pesunga na , some
+                                    more bullshit peoples are speaking about the politics here , Nothing to Say</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 align-items-center justify-content-center">
+                        <div class="card bg-dark text-white h-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">Coolie</h5>
+                                <p class="card-text">Na complaints lam Neraiya Pannirukan , aana indha veena pona
+                                    government , idhula raise pannunga naanga seri pandrom nu solludhe thavira , aana
+                                    ethana times na fill pannalum , onnum nadaka maatudhu , Ennatha solrathu !</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <section class="text-center">
+                        <h3 class="text-warning mb-3">Contact Us</h3>
+                        <p class="mb-1">📍 Chennai Corporation, Government of Tamil Nadu, India</p>
+                        <p class="mb-1">📞 +91 80722 06175</p>
+                        <p class="mb-1">📧 info@chennaiissues.gov.in</p>
+                    </section>
+        </footer>
 
 
 
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+
 </body>
+
 </html>
